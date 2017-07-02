@@ -1,6 +1,7 @@
 /*This file tests the factorial fucntion using mocha test framework and chai assertion library*/
 
-var assert = require ('assert') ; //we need the assert library from chai
+//You can also do "var assert = require ('assert') "
+var assert = require ('chai').assert; //we need the assert library from chai
 var myScript = require ('../src/factorial.js') ;
 
 describe('Factorial Function', function(){
