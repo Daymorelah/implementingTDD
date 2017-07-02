@@ -1,8 +1,8 @@
 /*This script file shows how to solve the factorial of a number*/
 
-//'use strict' ; // confines javscript to a strict version
+'use strict' ; // confines javscript to a strict version
 
-var factorial = function (number) { //function statement
+const factorial =  (number) => { //function statement using arrow function
 
 	if(typeof(number) == 'string'){
 		return 'You entered a string.' ;
@@ -20,7 +20,7 @@ var factorial = function (number) { //function statement
 	return result ;
 } // end of fucntion factorial
 
-module.exports = factorial
+export default factorial
 //Note: you can also do: exports.anyVarName = factorial; but in test.js u call it as 'myScritp.anyVarName()'.
 
 /*You can also export objects via d obect method as show below
