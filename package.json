@@ -4,8 +4,10 @@
   "description": "simple JS to demonstrate the use of TDD, via Mocha n chai, and to demonstrate the use of git and gitHub",
   "main": "src/factorial.js",
   "scripts": {
-    "test": "mocha Test/test.js",
-    "start": "babel-node src/factorial.js --presets es2015,stage-2"
+    "test": "mocha --compilers js:babel-register",
+    "start": "babel-node src/factorial.js",
+    "build": "babel src/factorial.js -d compiledFiles/src",
+    "serve": "node compiledFiles/src/factorial.js"
   },
   "keywords": [
     "javascript",
@@ -18,6 +20,7 @@
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.1",
     "chai": "*",
     "mocha": "*"
   }
