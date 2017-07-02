@@ -1,14 +1,20 @@
 /*This script file shows how to solve the factorial of a number*/
 
-'use strict' ; // confines javscript to a strict version
+//'use strict' ; // confines javscript to a strict version
 
 var factorial = function (number) { //function statement
 
+	if(typeof(number) == 'string'){
+		return 'You entered a string.' ;
+	}; //end of if statement
+	if(number === 1){
+		return 1 ;
+	}; //end of if statement
 	if (number<0) {
 		return 'undefined'
-	};//end of if statement
+	};//end of else if statement
 	let result = 1 ;
-	for (let i = number; i<=1; i--){
+	for (let i = number; i>=1; i--){
 		result = result*i ;
 	} // end of for loop
 	return result ;
