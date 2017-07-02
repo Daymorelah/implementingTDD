@@ -1,0 +1,16 @@
+{
+  "name": "selflearningclinic",
+  "version": "1.0.0",
+  "description": "simple JS to demonstrate the use of TDD, via Mocha n chai, and to demonstrate the use of git and gitHub",
+  "main": "src/factorial.js",
+  "scripts": {
+    "test": "mocha Test/test.js"
+  },
+  "keywords": [
+    "javascript",
+    "factorial",
+    "Mocha"
+  ],
+  "author": "Ademola Hussain",
+  "license": "ISC"
+}
