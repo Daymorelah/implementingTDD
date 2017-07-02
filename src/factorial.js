@@ -2,10 +2,16 @@
 
 'use strict' ; // confines javscript to a strict version
 
-const factorial = (number) =>{
+module.exports={
+	factorial: function(number){
+	if (number<0) {
+		return 'undefined'
+	};//end of if statement
 	let result = 1 ;
 	for (let i = number; i<=1; i--){
 		result = result*i ;
 	} // end of for loop
 	return result ;
 } // end of fucntion factorial
+
+}
